@@ -4,6 +4,8 @@
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -20,10 +22,19 @@ header {
   height: 70px;
   margin: auto;
   align-items: center;
+  justify-content: flex-start;
   position: sticky;
   top: 0;
   z-index: 10;
   background-image: linear-gradient(to bottom, rgb(60, 57, 57), rgb(1, 1, 1));
+}
+
+button {
+  padding: 0.2em 0.5em;
+}
+
+.home-button {
+  display: none;
 }
 
 .logo-container,
@@ -391,8 +402,8 @@ nav {
   color: var(--main-color);
   font-size: 1rem;
   position: absolute;
-  margin-top: 5px;
-  top: 57.5%;
+  /* margin-top: 5px; */
+  top: 55.5%;
   left: 8px;
   opacity: 0;
 }
@@ -404,16 +415,17 @@ nav {
 .stream-list-item-time {
   position: absolute;
   font-size: 0.8rem;
-  top: 60.5%;
+  top: 57%;
   left: 100px;
   opacity: 0;
   font-weight: 500;
+  margin: 0em 0 30em;
 }
 
 .stream-list-item-cast {
   display: inline-block;
   position: absolute;
-  top: 60%;
+  top: 63%;
   left: 5px;
   padding: 10px;
   opacity: 0;
